@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Administrador · MClin</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body{ margin: 0 !important; background-color: #FFF; }
+      .in-full{ width: 100%; display: block; background-color: transparent; border-width: 0px; text-align: center; padding: 10px 5px; margin-top: 15px; margin-bottom: 15px; color: #3B5493; border-bottom: 1px solid #3B5493; font-weight: 200; letter-spacing: 2px; }
+      .block-login{ display: block; position: relative; width: 35%; }
+      .cont-page{ width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; } 
+      .btn_access{ display: block; position: relative; background-color: transparent; color: #3B5493; padding: 7px; width: 100%; border: 1px solid #3B5493; margin-top: 40px; font-weight: 200; text-transform: uppercase; letter-spacing: 3px; }
+    </style>
+  </head>
+  <body>
+    <div class="cont-page">
+      <div class="block-login">
+        <!-- <form action="logme.php" method="POST"> -->
+        <div class="cont-logo">
+          <img src="images/logo.png" alt="" class="img-responsive center-block">
+        </div>
+        <input id="txtEmail" type="text" id="user" class="in-full" placeholder="email" name="user">
+        <input id="txtPassword" type="password" id="pass" class="in-full" placeholder="contraseña" name="pass">
+        <button id="btnLogin" class="btn_access" type="button">Ingresar</button>
+        <a id="btnSignUp" href="" style="display: block; text-align: center; margin-top: 40px;">Registrarme</a>
+        <button id="btnLogout" class="btn_access hide" type="button">Salir</button>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
